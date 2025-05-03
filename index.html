@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-<script type="text/javascript">
-  var appInsights=window.appInsights||function(config){
-    function r(config){ t.config=config; var u=document,e=window,o="script",s=u.createElement(o),i,f; s.src=config.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js";
-    u.getElementsByTagName(o)[0].parentNode.appendChild(s); try{e.appInsights=new Microsoft.ApplicationInsights.ApplicationInsights({ config:config }); e.appInsights.loadAppInsights(); return e.appInsights}catch(f){return null}};
-    return r
-  }({
-    instrumentationKey: "e290e393-109c-4c3e-b09a-3771485b36b3"
-  });
-</script>
   
   <!-- Required meta tags -->
   <meta charset="utf-8" />
@@ -29,6 +20,26 @@
     crossorigin="anonymous" />
   <link rel="shortcut icon" type="image/jpg" href="images/new23.png"/>
   <title>Shopify</title>
+  <script type="text/javascript">
+  var appInsights=window.appInsights||function(a){
+    function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}
+    var c={config:a},d=document,e=window;
+    setTimeout(function(){var b=d.createElement("script");
+    b.src="https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js";
+    d.getElementsByTagName("head")[0].appendChild(b)});
+    try{c.cookie=d.cookie}catch(a){}
+    c.queue=[],c.version=2;
+    for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());
+    b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("flush");
+    a.disableExceptionTracking||(f="onerror",b="_"+f,c[f]=function(){var a=arguments;
+    c.queue.push(function(){c[b].apply(c,a)})});
+    return c
+  }({
+    instrumentationKey:"919e7b07-7ca3-436b-a973-9632886b1200"
+  });
+
+  window.appInsights=appInsights,appInsights.trackPageView();
+</script>
 </head>
 
 <body id="top" style=" background-color: rgb(206 180 208);">
